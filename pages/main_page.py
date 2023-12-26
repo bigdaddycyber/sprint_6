@@ -2,7 +2,7 @@ from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 
 
-class BigPage:
+class BasePage:
 
     def __init__(self, browser):
         self.browser = browser

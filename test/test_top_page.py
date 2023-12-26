@@ -1,6 +1,6 @@
 import allure
 from pages.top_page import TopPage
-from pages.main_page import MainPage
+from pages.main_page import BasePage
 
 
 
@@ -19,4 +19,4 @@ class TestTopPage:
     def test_click_logo_ya_redirect_dzen(self, browser):
         header_page = TopPage(browser)
         header_page.click_to_logo_ya()
-        assert header_page.check_redirect_dzen
+        assert header_page.check_redirect_dzen()

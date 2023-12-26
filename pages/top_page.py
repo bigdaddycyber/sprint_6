@@ -1,10 +1,10 @@
 import allure
 from locators import MainLocators
-from pages.main_page import BigPage
+from pages.main_page import BasePage
 
 
 
-class TopPage(BigPage):
+class TopPage(BasePage):
 
     @allure.step("Кликнуть по кнопке 'Заказать' в заголовке")
     def click_to_order_button_header(self):

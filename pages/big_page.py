@@ -1,10 +1,10 @@
 import allure
 from locators import MainLocators
-from pages.main_page import BigPage
+from pages.main_page import BasePage
 
 
 
-class MainPage(BigPage):
+class MainPage(BasePage):
 
     @allure.step("Кликнуть 'да все привыкли'")
     def click_to_cookie_button(self):
